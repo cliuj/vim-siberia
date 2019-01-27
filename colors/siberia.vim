@@ -25,31 +25,28 @@ set background=dark
 "    chir.ag/projects/name-that-color/
 "
 let s:clear =               ['NONE', 'NONE']
-let s:black =               ['0',   '#000000']
-let s:white =               ['1',   '#ffffff']
-let s:slate_gray =          ['2',   '#778189']
-let s:light_cyan =          ['3',   '#d7ffff']
-let s:slate_teal =          ['4',   '#00005f']
-let s:light_green =         ['5',   '#87ff5f']
-let s:rosy_brown =          ['6',   '#bca494']
-let s:granite =             ['7',   '#8c9aa6']
-let s:midnight_blue =       ['9',   '#082944']
-let s:light_gray_blue =     ['10',  '#acd3e0']
-let s:solitude =            ['11',  '#ecf5fe']
-let s:alice_blue =          ['12',  '#f0f8ff']
-let s:shamrock =            ['13',  '#2ed19b']
-let s:elm =                 ['14',  '#1d956e']
-let s:bismarck =            ['15',  '#467186']
-let s:blue =                ['17',  '#00005f']
-let s:steel_blue =          ['81',  '#5fd7ff']
-let s:sky_blue =            ['117', '#87afff']
-let s:light_green =         ['119', '#87ff5f']
-let s:red =                 ['196', '#ff0000']
-let s:deep_pink =           ['199', '#ff00af']
-let s:magenta =             ['201', '#ff00ff']
-let s:yellow =              ['226', '#ffff00']
-let s:dark_gray =           ['234', '#1c1c1c']
-
+let s:black =               ['16',  '#000000']
+let s:DeepSkyBlue4 =        ['24',  '#005f87']
+let s:Turquiose4 =          ['30',  '#008787']
+let s:DarkCyan =                 ['36',  '#00af87']
+let s:MediumSpringGreen =            ['49',  '#00ffaf']
+let s:SteelBlue =            ['67',  '#5f87af']
+let s:SteelBlue1 =          ['81',  '#5fd7ff']
+let s:SkyBlue1 =            ['117', '#87afff']
+let s:Chartreuse1 =         ['118', '#87ff5f']
+let s:LightGreen =         ['119', '#87ff5f']
+let s:RosyBrown =          ['138', '#af8787']
+let s:LightCyan3 =             ['152', '#afd7d7']
+let s:PaleTurquoise1 =          ['159', '#afffff']
+let s:LightCyan1 =     ['195', '#d7ffff']
+let s:Red1 =                 ['196', '#ff0000']
+let s:DeepPink1 =           ['199', '#ff00af']
+let s:Magenta1 =             ['201', '#ff00ff']
+let s:Yellow1 =              ['226', '#ffff00']
+let s:White =               ['231', '#ffffff']
+let s:Grey11 =           ['234', '#1c1c1c']
+let s:Grey58 =          ['245', '#8a8a8a']
+let s:Grey93 =            ['255', '#eeeeee']
 
 " Text style 
 let s:italic    = 'italic'
@@ -73,65 +70,65 @@ endfunction
 " For reference on what each group does, please refer to this:
 " vimdoc.sourceforge.net/htmldoc/syntax.html
 "
-call s:highlight('Comment',                   s:slate_gray,       s:clear,  s:italic)
-call s:highlight('Constant',                  s:alice_blue,       s:clear,  s:none)
-call s:highlight('String',                    s:light_cyan,       s:clear,  s:none)
-call s:highlight('Character',                 s:bismarck,         s:clear,  s:none)
-call s:highlight('Number',                    s:steel_blue,       s:clear,  s:none)      
-call s:highlight('Boolean',                   s:yellow,           s:clear,  s:none)
-call s:highlight('Float',                     s:steel_blue,       s:clear,  s:none)
-call s:highlight('Identifier',                s:white,            s:clear,  s:none)
-call s:highlight('Function',                  s:shamrock,         s:clear,  s:none)
-call s:highlight('Statement',                 s:bismarck,         s:clear,  s:bold)
-call s:highlight('Conditional',               s:sky_blue,         s:clear,  s:bold)
-call s:highlight('Repeat',                    s:blue,             s:clear,  s:bold)
-call s:highlight('Label',                     s:sky_blue,         s:clear,  s:bold)       
-call s:highlight('Operator',                  s:rosy_brown,       s:clear,  s:none)
-call s:highlight('Keyword',                   s:rosy_brown,      s:clear,  s:none)
-call s:highlight('Exception',                 s:magenta,          s:clear,  s:italic)
-call s:highlight('PreProc',                   s:slate_teal,       s:clear,  s:italic)
-call s:highlight('Include',                   s:shamrock,         s:clear,  s:italic)
-call s:highlight('Define',                    s:elm,              s:clear,  s:italic)
-call s:highlight('Macro',                     s:light_green,      s:clear,  s:italic)
-call s:highlight('PreCondit',                 s:shamrock,         s:clear,  s:italic)
-call s:highlight('Type',                      s:bismarck,         s:clear,  s:bold)
-call s:highlight('StorageClass',              s:rosy_brown,       s:clear,  s:bold)
-call s:highlight('Structure',                 s:rosy_brown,       s:clear,  s:bold)
-call s:highlight('Typedef',                   s:rosy_brown,       s:clear,  s:bold)
-call s:highlight('Special',                   s:light_gray_blue,  s:clear,  s:none)
-call s:highlight('SpecialChar',               s:bismarck,         s:clear,  s:none)
-call s:highlight('Delimiter',                 s:slate_gray,       s:clear,  s:none)
-call s:highlight('SpecialComment',            s:slate_teal,       s:clear,  s:none)
-call s:highlight('Debug',                     s:red,              s:clear,  s:none)
-call s:highlight('Underlined',                s:slate_teal,       s:clear,  s:underline)
-call s:highlight('Error',                     s:red,              s:clear,  s:underline)
-call s:highlight('Todo',                      s:yellow,           s:clear,  s:none)
+call s:highlight('Comment',                   s:Grey58,       s:clear,  s:italic)
+call s:highlight('Constant',                  s:White,       s:clear,  s:none)
+call s:highlight('String',                    s:PaleTurquoise1,       s:clear,  s:none)
+call s:highlight('Character',                 s:SteelBlue,         s:clear,  s:none)
+call s:highlight('Number',                    s:SteelBlue1,       s:clear,  s:none)      
+call s:highlight('Boolean',                   s:Yellow1,           s:clear,  s:none)
+call s:highlight('Float',                     s:SteelBlue1,       s:clear,  s:none)
+call s:highlight('Identifier',                s:White,            s:clear,  s:none)
+call s:highlight('Function',                  s:MediumSpringGreen,         s:clear,  s:none)
+call s:highlight('Statement',                 s:SteelBlue,         s:clear,  s:bold)
+call s:highlight('Conditional',               s:SkyBlue1,         s:clear,  s:bold)
+call s:highlight('Repeat',                    s:LightGreen,             s:clear,  s:bold)
+call s:highlight('Label',                     s:SkyBlue1,         s:clear,  s:bold)       
+call s:highlight('Operator',                  s:RosyBrown,       s:clear,  s:none)
+call s:highlight('Keyword',                   s:RosyBrown,      s:clear,  s:none)
+call s:highlight('Exception',                 s:Magenta1,          s:clear,  s:italic)
+call s:highlight('PreProc',                   s:Turquiose4,       s:clear,  s:italic)
+call s:highlight('Include',                   s:MediumSpringGreen,         s:clear,  s:italic)
+call s:highlight('Define',                    s:DarkCyan,              s:clear,  s:italic)
+call s:highlight('Macro',                     s:Chartreuse1,      s:clear,  s:italic)
+call s:highlight('PreCondit',                 s:MediumSpringGreen,         s:clear,  s:italic)
+call s:highlight('Type',                      s:SteelBlue,         s:clear,  s:bold)
+call s:highlight('StorageClass',              s:RosyBrown,       s:clear,  s:bold)
+call s:highlight('Structure',                 s:RosyBrown,       s:clear,  s:bold)
+call s:highlight('Typedef',                   s:RosyBrown,       s:clear,  s:bold)
+call s:highlight('Special',                   s:LightCyan1,  s:clear,  s:none)
+call s:highlight('SpecialChar',               s:SteelBlue,         s:clear,  s:none)
+call s:highlight('Delimiter',                 s:Grey58,       s:clear,  s:none)
+call s:highlight('SpecialComment',            s:Turquiose4,       s:clear,  s:none)
+call s:highlight('Debug',                     s:Red1,              s:clear,  s:none)
+call s:highlight('Underlined',                s:Turquiose4,       s:clear,  s:underline)
+call s:highlight('Error',                     s:Red1,              s:clear,  s:underline)
+call s:highlight('Todo',                      s:Yellow1,           s:clear,  s:none)
 
 
 " Interface highlighting
-call s:highlight('Normal',                    s:clear,            s:dark_gray,   s:none)
-call s:highlight('Visual',                    s:clear,            s:midnight_blue,    s:none)
-call s:highlight('Cursor',                    s:light_gray_blue,  s:clear,            s:none)
-call s:highlight('LineNr',                    s:granite,          s:clear,            s:none)
-call s:highlight('CursorLineNr',              s:light_cyan,       s:clear,            s:italic)
+call s:highlight('Normal',                    s:clear,            s:Grey11,   s:none)
+call s:highlight('Visual',                    s:clear,            s:DeepSkyBlue4,    s:none)
+call s:highlight('Cursor',                    s:LightCyan1,  s:clear,            s:none)
+call s:highlight('LineNr',                    s:LightCyan3,          s:clear,            s:none)
+call s:highlight('CursorLineNr',              s:PaleTurquoise1,       s:clear,            s:italic)
 
 
 " Java syntax highlighting
-call s:highlight('javaParen',                 s:light_cyan,       s:clear, s:none)
-call s:highlight('javaCommentTitle',          s:slate_gray,       s:clear, s:none)
-call s:highlight('javaDocParam',              s:slate_gray,       s:clear, s:none)
-call s:highlight('javaDocTags',               s:slate_gray,       s:clear, s:none)
-call s:highlight('javaScopeDecl',             s:light_gray_blue,  s:clear, s:none)
-call s:highlight('javaStorageClass',          s:bismarck,         s:clear, s:none)
+call s:highlight('javaParen',                 s:PaleTurquoise1,       s:clear, s:none)
+call s:highlight('javaCommentTitle',          s:Grey58,       s:clear, s:none)
+call s:highlight('javaDocParam',              s:Grey58,       s:clear, s:none)
+call s:highlight('javaDocTags',               s:Grey58,       s:clear, s:none)
+call s:highlight('javaScopeDecl',             s:LightCyan1,  s:clear, s:none)
+call s:highlight('javaStorageClass',          s:SteelBlue,         s:clear, s:none)
 
 
 " Python syntax highlighting
-call s:highlight('pythonFunction',            s:light_gray_blue,  s:clear, s:none)
-call s:highlight('pythonBuiltin',             s:light_gray_blue,  s:clear, s:italic)
+call s:highlight('pythonFunction',            s:LightCyan1,  s:clear, s:none)
+call s:highlight('pythonBuiltin',             s:LightCyan1,  s:clear, s:italic)
 
 
 " Vimscript syntax highlighting
-call s:highlight('vimOption',                 s:alice_blue,       s:clear,  s:none)
+call s:highlight('vimOption',                 s:White,       s:clear,  s:none)
 
 
 " *NOTE*
@@ -141,31 +138,31 @@ call s:highlight('vimOption',                 s:alice_blue,       s:clear,  s:no
 "
 
 " Elm syntax highlighting
-" Requires plug: ElmCast/elm-vim
+" Requires plug: ElmCast/DarkCyan-vim
 "
-call s:highlight('elmTypeDef',                s:bismarck,         s:clear, s:bold)
-call s:highlight('elmAlias',                  s:light_gray_blue,  s:clear, s:none)
-call s:highlight('elmTopLevelDecl',           s:sky_blue,         s:clear, s:bold)
-call s:highlight('elmBraces',                 s:light_cyan,       s:clear, s:none)
+call s:highlight('DarkCyanTypeDef',                s:SteelBlue,         s:clear, s:bold)
+call s:highlight('DarkCyanAlias',                  s:LightCyan1,  s:clear, s:none)
+call s:highlight('DarkCyanTopLevelDecl',           s:SkyBlue1,         s:clear, s:bold)
+call s:highlight('DarkCyanBraces',                 s:PaleTurquoise1,       s:clear, s:none)
 
 
 " Elixir syntax highlighting
 " Requires plug: elixir-editors/vim-elixir
 "
-call s:highlight('elixirAlias',               s:elm,              s:clear, s:italic)
-call s:highlight('elixirDefine',              s:bismarck,         s:clear, s:none)
-call s:highlight('elixirBlockDefinition',     s:bismarck,         s:clear, s:none)
-call s:highlight('elixirFunctionDeclaration', s:light_gray_blue,  s:clear, s:none)
+call s:highlight('elixirAlias',               s:DarkCyan,              s:clear, s:italic)
+call s:highlight('elixirDefine',              s:SteelBlue,         s:clear, s:none)
+call s:highlight('elixirBlockDefinition',     s:SteelBlue,         s:clear, s:none)
+call s:highlight('elixirFunctionDeclaration', s:LightCyan1,  s:clear, s:none)
 
 
 " GOLang syntax highlighting
 " Requires plug: fatih/vim-go
 "
-call s:highlight('goPackage',                 s:elm,              s:clear, s:italic)
-call s:highlight('goImport',                  s:shamrock,         s:clear, s:italic)
+call s:highlight('goPackage',                 s:DarkCyan,              s:clear, s:italic)
+call s:highlight('goImport',                  s:MediumSpringGreen,         s:clear, s:italic)
 
 
 " Rust syntax highlighting
 " Requires plug: rust-lang/rust.vim
 "
-call s:highlight('rustMacro',                 s:bismarck,         s:clear, s:none)
+call s:highlight('rustMacro',                 s:SteelBlue,         s:clear, s:none)
