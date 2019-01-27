@@ -13,17 +13,6 @@ let g:colors_name = 'siberia'
 set background=dark
 
 " Color palette
-" 
-" *IMPORTANT*
-" Please note for users that the following values from 0-15 are based on the
-" 16 terminal colors that the author uses so some colors may or may not work
-" on your own system unless you change the your own terminal colors to these.
-" 
-" The corresponding hex values are listed for editing/tweaking. And the names
-" can be found here:
-"
-"    chir.ag/projects/name-that-color/
-"
 let s:clear               = ['NONE', 'NONE']
 let s:black               = ['16'  , '#000000']
 let s:DeepSkyBlue4        = ['24'  , '#005f87']
@@ -140,29 +129,29 @@ call s:highlight('vimOption',                 s:White,              s:clear,    
 " Elm syntax highlighting
 " Requires plug: ElmCast/DarkCyan-vim
 "
-call s:highlight('DarkCyanTypeDef',           s:SteelBlue,          s:clear,          s:bold      )
-call s:highlight('DarkCyanAlias',             s:LightCyan1,         s:clear,          s:none      )
-call s:highlight('DarkCyanTopLevelDecl',      s:SkyBlue1,           s:clear,          s:bold      )
-call s:highlight('DarkCyanBraces',            s:PaleTurquoise1,     s:clear,          s:none      )
+"call s:highlight('DarkCyanTypeDef',           s:SteelBlue,          s:clear,          s:bold      )
+"call s:highlight('DarkCyanAlias',             s:LightCyan1,         s:clear,          s:none      )
+"call s:highlight('DarkCyanTopLevelDecl',      s:SkyBlue1,           s:clear,          s:bold      )
+"call s:highlight('DarkCyanBraces',            s:PaleTurquoise1,     s:clear,          s:none      )
 
 
 " Elixir syntax highlighting
 " Requires plug: elixir-editors/vim-elixir
 "
-call s:highlight('elixirAlias',               s:DarkCyan,           s:clear,          s:italic    )
-call s:highlight('elixirDefine',              s:SteelBlue,          s:clear,          s:none      )
-call s:highlight('elixirBlockDefinition',     s:SteelBlue,          s:clear,          s:none      )
-call s:highlight('elixirFunctionDeclaration', s:LightCyan1,         s:clear,          s:none      )
+"call s:highlight('elixirAlias',               s:DarkCyan,           s:clear,          s:italic    )
+"call s:highlight('elixirDefine',              s:SteelBlue,          s:clear,          s:none      )
+"call s:highlight('elixirBlockDefinition',     s:SteelBlue,          s:clear,          s:none      )
+"call s:highlight('elixirFunctionDeclaration', s:LightCyan1,         s:clear,          s:none      )
 
 
 " GOLang syntax highlighting
 " Requires plug: fatih/vim-go
 "
-call s:highlight('goPackage',                 s:DarkCyan,           s:clear,          s:italic    )
-call s:highlight('goImport',                  s:MediumSpringGreen,  s:clear,          s:italic    )
+"call s:highlight('goPackage',                 s:DarkCyan,           s:clear,          s:italic    )
+"call s:highlight('goImport',                  s:MediumSpringGreen,  s:clear,          s:italic    )
 
 
 " Rust syntax highlighting
 " Requires plug: rust-lang/rust.vim
 "
-call s:highlight('rustMacro',                 s:SteelBlue,         s:clear,           s:none      )
+"call s:highlight('rustMacro',                 s:SteelBlue,         s:clear,           s:none      )
