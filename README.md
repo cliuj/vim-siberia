@@ -5,7 +5,6 @@ A dark vim theme for `256-color terminals` or `GVim`
 ## Screenshots
 **Rust** and **Ruby** samples:
 ![siberia_rust_ruby_screenshot](https://user-images.githubusercontent.com/22797257/72674494-37ca3100-3a6f-11ea-90e3-59f5bd6a9deb.png)
--052b3e654c52.png)
 
 
 **Javascript** and **Python** samples:
